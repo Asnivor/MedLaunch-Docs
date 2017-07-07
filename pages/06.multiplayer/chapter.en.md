@@ -1,14 +1,14 @@
 ---
-title: Credits
+title: Multiplayer
 taxonomy:
     category:
         - docs
 ---
 
-# Credits
+# Multiplayer
 
 ===
 
-### Code/Projects/Libraries used and folks to thank
+### How to play online with other people
 
 ![Logo](../images/MedLaunch_sm.png)
