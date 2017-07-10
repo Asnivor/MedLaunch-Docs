@@ -56,3 +56,19 @@ Mednafen is pretty choosy about which particular firmware you need. You will hav
 |  Filename  |  Purpose  |  Hash  |
 |  :-----          |  :-----          |  :-----          |
 |  pcfx.rom |  PC-FX BIOS version 1.00. Recommended BIOS version |  SHA1: 1a77fd83e337f906aecab27a1604db064cf10074|
+
+### Lynx
+|  Filename  |  Purpose  |  Hash  |
+|  :-----          |  :-----          |  :-----          |
+|  lynxboot.img |  512-byte Lynx boot ROM image - this needs to reside in the base mednafen folder and you cannot set its location to something else |  N/A|
+
+### PC-Engine CD
+
+Mednafen is known to work with the following syscard3.pce BIOSes:
+
+|  Filename  |  Purpose  |  Hash  |
+|  :-----          |  :-----          |  :-----          |
+|  syscard3.pce |  BIOS/PC Engine CD-Rom System BIOS (1988) |  CRC: 2585C0B3 <br />SHA256: 1b4c260326d905bc718812dad0f68089977f427b|
+|  syscard3.pce |  BIOS/PC Engine CD-Rom System BIOS (1988) v3.00 [o1] |  SHA256: bf2f90bdc3f82bc4bf28b4e9707530165dedcdd2|
+
+

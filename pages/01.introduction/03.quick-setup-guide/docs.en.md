@@ -221,8 +221,56 @@ By default, mednafen is set up with default key-bindings for some emulated syste
 * <a href="https://mednafen.github.io/documentation/snes.html#Section_default_keys" target="_blank">Super Nintendo Entertainment System (SNES)</a>
 * <a href="https://mednafen.github.io/documentation/wswan.html#Section_default_keys" target="_blank">Bandai WonderSwan / WonderSwan Color</a>
 
-### (Optional) Setup Gamepad/Joystick
+### Setup Custom Bindings
+
+! Mednafen Tip: You can configure your keyboard/gamepad bindings from within Mednafen if this is easier for you. ALT-SHIFT-1 will configure bindings for the emulated device assigned to virtual port 1. ALT-SHIFT-2 - the bindings for the emulated device assigned to virtual port 2, etc...
+
+In this example, we will configure the standard SNES gamepad on Virtual Port 1:
+
+![configuresnesgamepad](configuresnesgamepad.PNG)
+
+Ensure that 'Virtual Port 1' is selected (and also make sure under the 'Configs' tab -> SNES, that 'Port 1 Input Device' is set to 'Gamepad') and click the 'Configure' button. This will open the configuration page for this specific virtual device on this virtual port:
+
+![snescontroller](snescontroller01.PNG)
+
+You can see that the 'Primary' column is already populated with the default keyboard bindings for Mednafen. Currently MedLaunch only shows these values as they are in the Mednafen config file.
+
+Left click in one of the text boxes and the box will turn RED. This signifies that MedLaunch is waiting for your to press a key (or a gamepad/joystick button/axis):
+
+![snescontroller](snescontroller02.PNG)
+
+The translated value you entered will be put in the textbox and the focused box will change to the next primary binding option. Work your way through all the bindings and set them up as you require.
+
+!!! When you reach the end of the primary column, it will move on to the secondary column. You can stop here if you dont wish to configure this. At any point in this process you can click in a different cell to restart configuration from that point.
+
+You can also right-click in a cell to bring up a list of pre-determined mouse binds that you can select:
+
+![snescontroller](snescontroller03.png)
+
+When you are happy with the binding configuration, click 'OK' and the bindings will be saved to the mednafen config file in the mednafen directory.
+
+You also have the option of undoing all changes or cancelling.
+
+!!!! This is the only part of MedLaunch that saves directly to the Mednafen configuration file in the mednafen directory (mednafen-09x.cfg). Every other setting is stored locally and passed to mednafen through the command line on game launch.
+
+!! IMPORTANT: MedLaunch only detects connected physical controllers when it initalises. If you have connected a USB gamepad etc.. after you have started MedLaunch, you will have to return to the 'Controls' tab and click the orange 'POLL DEVICES' button in the bottom left of the screen. After this is done, MedLaunch should be able to detect your gamepad input when configuring bindings.
+
+![polldevices](polldevices.PNG)
 
 ## 6. Play a Game
 
+At this point, you will have scanned games into MedLaunch, setup some config settings and configured controller bindings for a system (or systems). Launching a game could not be simpler.
+
+Navigate back to the 'Games' tab and double-click the game you wish to launch. MedLaunch will then attempt to start the game:
+
+![gamelaunch](gamelaunch01.png)
+
+When the game launches, MedLaunch will minimise.
+
+![SNESsuperbaseball2000](superbb.png)
+
+When you have finished playing, close the Mednafen window (or press ESC). This will quit mednafen and MedLaunch will pop back up.
+
 ## What now?
+
+This was a very basic tutorial on using MedLaunch, but there are many other features and settings to play with. Check out the rest of the documentation that deals with everything in more detail.
