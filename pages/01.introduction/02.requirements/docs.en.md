@@ -35,3 +35,24 @@ The will need to be placed either in the root of your Mednafen directory, the 'f
 
 The default ROMs that Mednafen looks for are shown below in the MedLaunch settings:
 ![](biosfirmware01.PNG)
+
+Mednafen is pretty choosy about which particular firmware you need. You will have to locate the following firmware/BIOSes:
+
+### PSX
+
+|  Filename  |  Purpose  |  Hash  |
+|  :-----          |  :-----          |  :-----          |
+|  scph5500.bin |  SCPH-5500/v3.0J BIOS image - Required for Japan-region games |  MD5: 8dd7d5296a650fac7319bce665a6a53c <br />SHA256: 9c0421858e217805f4abe18698afea8d5aa36ff0727eb8484944e00eb5e7eadb|
+|  scph5501.bin |  SCPH-5501/v3.0A BIOS image - Required for North America/US-region games |  MD5: 490f666e1afb15b7362b406ed1cea246 <br />SHA256: 11052b6499e466bbf0a709b1f9cb6834a9418e66680387912451e971cf8a1fef |
+|  scph5502.bin |  SCPH-5502/v3.0E BIOS image - Required for Europe-region games |  MD5: 32736f17079d0b2b7024407c39bd3050 <br />SHA256: 1faaa18fa820a0225e488d9f086296b8e6c46df739666093987ff7d8fd352c09 |
+
+### Saturn
+|  Filename  |  Purpose  |  Hash  |
+|  :-----          |  :-----          |  :-----          |
+|  sega_101.bin |  BIOS image - Required for Japan-region games |  SHA256: dcfef4b99605f872b6c3b6d05c045385cdea3d1b702906a0ed930df7bcb7deac|
+|  mpr-17933.bin |  BIOS image - Required for North America/US-region and Europe-region games |  SHA256: 96e106f740ab448cf89f0dd49dfbac7fe5391cb6bd6e14ad5e3061c13330266f |
+
+### PC-FX
+|  Filename  |  Purpose  |  Hash  |
+|  :-----          |  :-----          |  :-----          |
+|  pcfx.rom |  PC-FX BIOS version 1.00. Recommended BIOS version |  SHA1: 1a77fd83e337f906aecab27a1604db064cf10074|
